@@ -10,7 +10,7 @@ from PIL import Image
 dpi = 300
 pdf_path = 'Discover-Prime.pdf'
 pages = convert_from_path(pdf_path, dpi=dpi)
-page_image = pages[]  # First page
+page_image = pages[0]  # First page
 image_np = np.array(page_image)
 
 # === Step 2: Run OCR ===
